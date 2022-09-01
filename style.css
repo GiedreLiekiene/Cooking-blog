@@ -1,4 +1,20 @@
+.categories-list {
+    align-items: center;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
 
+.categories-list ol {
+    list-style-type: decimal;
+    width: 1200px;
+}
+
+.categories-list ol li{
+    display: inline;
+    float: left;
+    padding: 10px 0px;
+}
 
 .category-button {
     display: block;
