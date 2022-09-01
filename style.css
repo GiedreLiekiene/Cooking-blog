@@ -132,3 +132,20 @@ width: 200px;
   margin: 2em;
   cursor: pointer;
 }
+
+/* Media  queries */
+
+@media screen and (max-width:768px) {
+  header {
+      position: static;
+  }
+  .nav-wrapper, .info, .nav {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .search-container {
+    /* dar pagalvosiu */
+  }
+
+}
