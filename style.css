@@ -1,0 +1,22 @@
+
+
+.category-button {
+    display: block;
+    width: 100px;
+    padding: 2em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.category-button img {
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 9999px;
+}
+
+.category-button:hover {
+    opacity: 0.6;
+}
