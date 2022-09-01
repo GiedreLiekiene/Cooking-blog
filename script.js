@@ -39,12 +39,15 @@ async function getPhotos() {
 }
 getPhotos();
 
-//search-bar
-const faSearch = document.querySelector(".fa-magnifying-glass");
-const icon = document.querySelector(".icon");
-const searchInput = document.querySelector("input[type=text]");
 
-faSearch.click(function(){
-    icon.toggleClass("active");
-    searchInput.toggleClass("active");
-});
+  //search-bar
+  let search = document.querySelector(".search");
+  let clear = document.querySelector(".clear");
+
+  search.onclick = function () {
+    document.querySelector(".search-container").classList.toggle('active');
+  };
+
+  clear.onclick = function () {
+    document.getElementById("search").value = "";
+  };
