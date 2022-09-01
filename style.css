@@ -1,0 +1,13 @@
+.main-gallery {
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+.main-gallery img {
+    width: 20%;
+    border-radius: 10px;
+    margin: 2em;
+    cursor: pointer;
+}
