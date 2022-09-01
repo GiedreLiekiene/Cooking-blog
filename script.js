@@ -38,3 +38,13 @@ async function getPhotos() {
     
 }
 getPhotos();
+
+//search-bar
+const faSearch = document.querySelector(".fa-magnifying-glass");
+const icon = document.querySelector(".icon");
+const searchInput = document.querySelector("input[type=text]");
+
+faSearch.click(function(){
+    icon.toggleClass("active");
+    searchInput.toggleClass("active");
+});

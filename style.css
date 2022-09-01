@@ -1,13 +1,142 @@
-.main-gallery {
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --first-color: #f6e7d8;
+  --second-color: #f68989;
+  --third-color: #c65d7b;
+  --fourth-color: #874356;
+}
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 3px 12px 5px rgba(135, 67, 86, 0.75);
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--first-color);
+}
+
+.logo,
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+}
+
+.fa-bowl-rice {
+  margin: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 20px;
+  color: var(--fourth-color);
+  font-size: 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--third-color);
+}
+
+.search-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.search-box {
+  height: 26px;
+}
+.search-area {
+  position: relative;  
+  display: flex;
+  flex-direction: row;
+}
+input {
     box-sizing: border-box;
-    align-items: center;
-    margin-top: 300px;
-    margin-bottom: 50px;
-    justify-content: space-around;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    border: none;
+    line-height: 1.5rem;
+}
+
+.search-area input[type="text"] {
+  border: 0;
+  padding: 0;
+  width: 0;
+  height: 32px;
+  transition: all 0, 5s ease;
+}
+.icon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 6px;
+  right: 0;
+  transition: all 0.5s 0.3s ease;
+  cursor: pointer;
+}
+.icon i {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 32px;
+}
+.icon.active {
+  transition: all 0.3s ease;
+}
+.search-area input[type="text"].active {
+  width: 200px;
+  padding: 0 15px;
+  transition: 0.5s;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+/* END of header */
+
+.main-gallery {
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  justify-content: space-around;
 }
 .main-gallery img {
-    width: 20%;
-    border-radius: 10px;
-    margin: 2em;
-    cursor: pointer;
+  width: 20%;
+  border-radius: 10px;
+  margin: 2em;
+  cursor: pointer;
 }
