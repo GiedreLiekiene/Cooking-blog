@@ -3,15 +3,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="categorieslist.css" />
-    <link rel='stylesheet' href="http://cdnjs.claudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
-    <link rel='stylesheet' href="http://cdnjs.claudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="http://cdnjs.claudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"/>
-    <title>Yummy cooking</title>
+    <link rel="stylesheet" href="./styles/style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/categorieslist.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/mainGallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yummy cooking</title>
   </head>
   <body>
     <main>
@@ -19,14 +26,14 @@
       <div class="nav-wrapper">
         <div class="logo">
           <i class="fa-solid fa-bowl-rice fa-xl"></i>
-          <h1>Yummy cooking</h1>
+          <a class="nav-link" href="#logo"><h1>Yummy cooking</h1></a>
         </div>
         <nav class="nav">
           <ul class="info">
-            <li><a class="nav-link" href="#logo">Home</a></li>
+            <li></li>
             <li><a class="nav-link" href="#main-gallery">About</a></li>
-            <li><a class="nav-link" href="#">Recipes</a></li>
-            <li><a class="nav-link" href="#">Contacts</a></li>
+            <li><a class="nav-link" href="#categories-list">Recipes</a></li>
+            <li><a class="nav-link" href="#footer-content">Contacts</a></li>
           </ul>
           <div class="search-container">
             <div class="search-icon">
@@ -40,11 +47,15 @@
         </nav>
       </div>
     </header>
+    <div>
     <!-- OLGA: Content Gallery -->
-    <section class="main-gallery" id="main-gallery"></section>
+    <section class="main-gallery" id="main-gallery">
+      <script src="./scripts/mainGalleryScript.js"></script>
+    </section>
 
     <!-- GIEDRE: Categories-list -->
     <div class="categories-list"></div>
+
     <script src="./categorieslist.js"></script>
     <script src="./script.js"></script>
   </main>
@@ -68,5 +79,7 @@
           </div>
       </div>
      </div>
+    <script src="./scripts/categorieslist.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

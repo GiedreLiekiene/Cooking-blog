@@ -6,7 +6,7 @@ function generateListElement(photo) {
         <li>
             <a
                 class="category-button"
-                href="https://pinchofyum.com/recipes/quick-and-easy"
+                href="${photo.links.html}"
             >
                 <img src="${photo.urls.regular}" alt="" />
                 <span class="category-name">Vegan</span>
@@ -17,7 +17,7 @@ function generateListElement(photo) {
 
 function getCategories() {
   const count = 8;
-  const apiKey = `Y9lFDWqBGfIi7W2HpKfElFILUuo1C88SpqyuBoLc1TM`;
+  const apiKey = `BZF33oGkJSftG6sUPaXHn-Bp42Tq9q36LlO0erlOltQ`;
   let query = "food";
   let orientation = "squarish";
   const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=${orientation}&query=${query}`;

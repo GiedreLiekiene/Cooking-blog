@@ -1,0 +1,26 @@
+.main-gallery {
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+  }
+  .main-gallery img {
+    width: 20%;
+    border-radius: 10px;
+    margin: 2em;
+    cursor: pointer;
+  }
+  @media screen and (max-width:768px) {
+    .main-gallery {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+      
+    }
+    .main-gallery img {
+        width: 60%;
+   
+    }
+  
+  }
