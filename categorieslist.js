@@ -6,7 +6,7 @@ function generateListElement(photo) {
         <li>
             <a
                 class="category-button"
-                href="https://pinchofyum.com/recipes/quick-and-easy"
+                href="https://unsplash.com/s/photos/vegan"
             >
                 <img src="${photo.urls.regular}" alt="" />
                 <span class="category-name">Vegan</span>
