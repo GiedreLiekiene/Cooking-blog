@@ -39,8 +39,14 @@ header {
   color: var(--fourth-color);
 }
 
-.fa-bowl-rice {
+.fa-bowl-rice, h1 {
   margin: 20px;
+  cursor: pointer;
+}
+.fa-bowl-rice:hover {
+  color: var(--third-color);
+  scale: 1.5;
+  transition: 0.3s;
 }
 .info {
   display: flex;
@@ -144,8 +150,8 @@ width: 200px;
     flex-direction: column;
     
   }
-  .search-container {
-    /* dar pagalvosiu */
-  }
+  /* .search-container {
+    /* dar pagalvosiu 
+  } */
 
 }
