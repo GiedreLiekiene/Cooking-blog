@@ -3,6 +3,8 @@
     margin-top: 2px;
     margin-bottom: 50px;
     justify-content: space-around;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .categories-list ol {
@@ -34,7 +36,7 @@
     margin-bottom: 5px;
     width: 100%;
     border-radius: 9999px;
-    border:grey
+    border: 2px solid whitesmoke;
 }
 
 .category-button:hover {

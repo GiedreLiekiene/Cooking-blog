@@ -15,9 +15,11 @@ function generateListElement(photo) {
     `;
 }
 
+function getElementById(de)
+
 function getCategories() {
   const count = 8;
-  const apiKey = `l1IPdW9BJje5fHisAuviG9ctDmbtu-0BOZ8wXieAk1o`;
+  const apiKey = `6NteJKVYH-2rmsYmOZTCpA4lO3YGg0fvWjADVHR3Oa4`;
   let query = "food";
   let orientation = "squarish";
   const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=${orientation}&query=${query}`;
