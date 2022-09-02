@@ -17,7 +17,7 @@ function generateListElement(photo) {
 
 function getCategories() {
   const count = 8;
-  const apiKey = `NGxNbMKQojvVX72XX0MhDG7cyV5YUlYCNUOCtF_7KBs`;
+  const apiKey = `BZF33oGkJSftG6sUPaXHn-Bp42Tq9q36LlO0erlOltQ`;
   let query = "food";
   let orientation = "squarish";
   const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=${orientation}&query=${query}`;
