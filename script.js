@@ -50,7 +50,6 @@ search.onclick = function () {
 
 clear.onclick = function () {
   document.getElementById("search").value = "";
-   alert('hi');
 };
 
 clear.ondblclick = function () {
