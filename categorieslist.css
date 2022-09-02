@@ -9,6 +9,7 @@
 
 .categories-list ol {
     margin-top: 0px;
+    margin-left: 50px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     list-style-type: decimal;
