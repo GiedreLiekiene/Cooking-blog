@@ -38,8 +38,10 @@ header {
   background-color: var(--first-color);
   color: var(--fourth-color);
 }
-
-.fa-bowl-rice, h1 {
+h1{
+  font-size: 24px;
+} 
+.fa-bowl-rice {
   margin: 20px;
 }
 .fa-bowl-rice:hover {
