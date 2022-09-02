@@ -124,20 +124,6 @@ width: 200px;
 }
 /* END of header */
 
-.main-gallery {
-  box-sizing: border-box;
-  align-items: center;
-  margin-top: 300px;
-  margin-bottom: 50px;
-  justify-content: space-around;
-}
-.main-gallery img {
-  width: 20%;
-  border-radius: 10px;
-  margin: 2em;
-  cursor: pointer;
-}
-
 /* Media  queries */
 
 @media screen and (max-width:768px) {

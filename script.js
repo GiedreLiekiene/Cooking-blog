@@ -1,3 +1,4 @@
+
 const mainGallery = document.getElementById("main-gallery");
 
 let photoArray = [];
