@@ -6,16 +6,51 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="categorieslist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yummy cooking</title>
+
   </head>
   <body>
-    <!-- DIANA: nav bar: menu items & search icon -->
-
+    <header>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <i class="fa-solid fa-bowl-rice fa-xl"></i>
+          <h1>Yummy cooking</h1>
+        </div>
+        <nav class="nav">
+          <ul class="info">
+            <li><a class="nav-link" href="#logo">Home</a></li>
+            <li><a class="nav-link" href="#main-gallery">About</a></li>
+            <li><a class="nav-link" href="#">Recipes</a></li>
+            <li><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+          <div class="search-container">
+            <div class="search-icon">
+              <i class="search fa fa-search fa-xl"></i>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Search..." id="search" />
+              <i class="clear fa fa-times"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- OLGA: Content Gallery -->
+    <section class="main-gallery" id="main-gallery"></section>
 
-    <!-- GIEDRE: IMG circles/categories-list -->
-
-    <script></script>
+    <!-- GIEDRE: Categories-list -->
+    <div class="categories-list"></div>
+    <script src="./categorieslist.js"></script>
+    <script src="./script.js"></script>
 
     <!-- KIA: Footer -->
       <footer>
