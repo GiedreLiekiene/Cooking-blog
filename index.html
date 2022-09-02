@@ -3,34 +3,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="categorieslist.css" />
-    <link rel="stylesheet" href="./mainGallery.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./styles/categorieslist.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/mainGallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"/>
     <title>Yummy cooking</title>
-
   </head>
   <body>
+    <main>
     <header>
       <div class="nav-wrapper">
         <div class="logo">
           <i class="fa-solid fa-bowl-rice fa-xl"></i>
-          <a class="nav-link" href="#logo"><h1>Yummy cooking </h1></a>
+          <a class="nav-link" href="#logo"><h1>Yummy cooking</h1></a>
         </div>
         <nav class="nav">
           <ul class="info">
-            <li></li>
             <li><a class="nav-link" href="#main-gallery">About</a></li>
             <li><a class="nav-link" href="#categories-list">Recipes</a></li>
             <li><a class="nav-link" href="#footer-content">Contacts</a></li>
@@ -47,34 +38,39 @@
         </nav>
       </div>
     </header>
+    <div>
     <!-- OLGA: Content Gallery -->
     <section class="main-gallery" id="main-gallery">
-      <script src="./mainScript.js"></script>
+      <script src="./scripts/mainGalleryScript.js"></script>
     </section>
 
     <!-- GIEDRE: Categories-list -->
     <div class="categories-list"></div>
+
     <script src="./categorieslist.js"></script>
     <script src="./script.js"></script>
+  </main>
 
     <!-- KIA: Footer -->
-      <footer>
-        <div class="footer-content">
-          <h3>Cooking Blog</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus 
-            delectus reprehenderit consequatur, optio nisi, sit perspiciatis facere quibusdam 
-            vitae rerum nostrum, cupiditate odit quae.
-          </p>
-        <div class="socials">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-        </div>
+    <div class="global">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-3">
+              <div class="social">
+                <h6>Follow us</h6>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+              </div>
+            </div>
           </div>
-      </footer>
+      </div>
+     </div>
+    <script src="./scripts/categorieslist.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
