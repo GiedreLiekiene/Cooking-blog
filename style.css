@@ -1,13 +1,137 @@
-.main-gallery {
-    box-sizing: border-box;
-    align-items: center;
-    margin-top: 300px;
-    margin-bottom: 50px;
-    justify-content: space-around;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
 }
-.main-gallery img {
-    width: 20%;
-    border-radius: 10px;
-    margin: 2em;
-    cursor: pointer;
+
+:root {
+  --first-color: #f6e7d8;
+  --second-color: #f68989;
+  --third-color: #c65d7b;
+  --fourth-color: #874356;
+}
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 3px 12px 5px rgba(135, 67, 86, 0.75);
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--first-color);
+}
+
+.logo,
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+}
+
+.fa-bowl-rice {
+  margin: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 20px;
+  color: var(--fourth-color);
+  font-size: 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--third-color);
+}
+
+.search-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.search-container .search-icon .search {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.search-container.active {
+width: 200px;
+}
+
+.search-container .input {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-container .input .clear {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #8888;
+}
+/* END of header */
+
+/* Media  queries */
+
+@media screen and (max-width:768px) {
+  header {
+      position: static;
+  }
+  .nav-wrapper, .info, .nav {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .search-container {
+    /* dar pagalvosiu */
+  }
+
 }
