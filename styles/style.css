@@ -79,6 +79,7 @@ h1{
 .hamburger {
   display: none;
   cursor: pointer;
+  margin: 10px;
 }
 .bar {
   display: block;
@@ -90,8 +91,8 @@ h1{
   background-color: var(--fourth-color);
 }
 .search-container {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: white;
   position: relative;
@@ -101,14 +102,15 @@ h1{
 
 .search-container .search-icon {
   position: absolute;
-  left: 30px;
+  left: 25px;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 .search-container .search-icon .search {
-  font-size: 21px;
+  font-size: 18px;
+  align-self: center;
   cursor: pointer;
 }
 
@@ -119,7 +121,7 @@ width: 200px;
 .search-container .input {
   position: relative;
   width: 100px;
-  height: 60px;
+  height: 50px;
   left: 60px;
   display: flex;
   align-items: center;
