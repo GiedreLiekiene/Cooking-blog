@@ -64,3 +64,12 @@ clear.ondblclick = function () {
 //     inactive(3000);
 //     return (input === 0) =  document.querySelector(".search-container").classList.toggle('active', false);
 // }
+
+//Burger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
