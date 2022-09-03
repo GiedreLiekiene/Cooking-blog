@@ -137,6 +137,10 @@ width: 200px;
     flex-direction: column;
     
   }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
   /* .search-container {
     /* dar pagalvosiu 
   } */
