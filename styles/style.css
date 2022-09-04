@@ -260,9 +260,10 @@ main {
 }
 h3, p {
   color: var(--fourth-color);
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px 30px;
   text-align: center;
+  overflow: hidden;
 }
 /* END carousel */
 
@@ -344,5 +345,6 @@ h3, p {
   }
   h3, p {
     padding: 10px;
+    margin: auto;
   }
 }
