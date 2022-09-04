@@ -6,6 +6,9 @@
     padding: 50px;
     position: relative;
     width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .footer h6{
@@ -18,7 +21,7 @@
 }
 
 .footer .social{
-    border-top: 1px solid rgba(129, 2, 36, 0.9);
+    border-top: 1px solid rgba(129, 2, 36, 0.7);
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
@@ -28,6 +31,7 @@
 }
 
 .footer .social a{
+    background-color: antiquewhite;
     border: 2px solid rgba(129, 2, 36, 0.9);
     border-radius: 50%;
     box-shadow: 0px 0px 0px 1px rgba(129, 2, 36, 0.9);
