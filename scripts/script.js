@@ -39,11 +39,13 @@
 
 //search-bar
 let search = document.querySelector(".search");
+console.log(search)
 let clear = document.querySelector(".clear");
 let input = document.getElementById("search");
 
 search.onclick = function () {
   document.querySelector(".search-container").classList.toggle("active");
+  getBack(input.innerHTML.length)
 };
 
 clear.onclick = function () {
@@ -54,12 +56,25 @@ clear.ondblclick = function () {
   document.querySelector(".search-container").classList.toggle("active", false);
 };
 
-//   setTimeout((input) => { (input.innerText.length === 0)  = document.querySelector(".search-container").classList.toggle('active', false)}, 3000)
+// function inactive (ms) {
+//     return setTimeout(() => {}, ms);
+// };
 
-//   function inactive (ms) {
-//     return new Promise ((resolve) => setTimeout(resolve, ms));
-//   };
-//     async function getBack(input) {
-//         await inactive(3000);
-//         return (input.value.length === 0) =  document.querySelector(".search-container").classList.toggle('active', false);
-//     }
+// function getBack(input) {
+//     inactive(3000);
+//     return (input === 0) =  document.querySelector(".search-container").classList.toggle('active', false);
+// }
+
+//Burger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
+  hamburger.classList.toggle("active", false);
+  navMenu.classList.toggle("active", false);
+}));

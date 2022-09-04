@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -25,6 +30,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   background-color: var(--first-color);
 }
@@ -38,8 +44,10 @@ header {
   background-color: var(--first-color);
   color: var(--fourth-color);
 }
-
-.fa-bowl-rice, h1 {
+h1{
+  font-size: 24px;
+} 
+.fa-bowl-rice {
   margin: 20px;
 }
 .fa-bowl-rice:hover {
@@ -53,7 +61,9 @@ header {
   list-style: none;
   margin: 20px;
 }
-
+.nav {
+  min-height: 70px;
+}
 .nav-link {
   text-decoration: none;
   margin: 20px;
@@ -66,10 +76,23 @@ header {
 .nav-link:hover {
   color: var(--third-color);
 }
-
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin: 10px;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+  background-color: var(--fourth-color);
+}
 .search-container {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: white;
   position: relative;
@@ -79,14 +102,15 @@ header {
 
 .search-container .search-icon {
   position: absolute;
-  left: 30px;
+  left: 25px;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 .search-container .search-icon .search {
-  font-size: 21px;
+  font-size: 18px;
+  align-self: center;
   cursor: pointer;
 }
 
@@ -97,7 +121,7 @@ width: 200px;
 .search-container .input {
   position: relative;
   width: 100px;
-  height: 60px;
+  height: 50px;
   left: 60px;
   display: flex;
   align-items: center;
@@ -130,13 +154,40 @@ width: 200px;
   header {
       position: static;
   }
-  .nav-wrapper, .info, .nav {
-    display: flex;
-    flex-direction: column;
-    
+  h1 {
+    font-size: 16px;
   }
-  /* .search-container {
-    /* dar pagalvosiu 
-  } */
-
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0px;
+    padding: 20px;
+    background-color: var(--first-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
 }
