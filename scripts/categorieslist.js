@@ -23,14 +23,14 @@ function getCategories() {
   const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=${orientation}&query=${query}`;
 
   let categoryNames = [
+    "Dinner",
+    "Vegetarian",
+    "Healthy",
     "Vegan",
-    "Desert",
-    "Food",
-    "Vegan",
-    "Desert",
-    "Food",
-    "Vegan",
-    "Desert",
+    "Dessert",
+    "Soups",
+    "Salads",
+    "Breakfast",
   ];
 
   fetch(apiUrl)
