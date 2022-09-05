@@ -11,6 +11,10 @@
     margin: 2em;
     cursor: pointer;
   }
+  .main-gallery img:hover {
+  opacity: 0.6;
+  }
+  
   @media screen and (max-width:768px) {
     .main-gallery {
       display: flex;
