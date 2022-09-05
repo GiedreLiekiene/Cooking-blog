@@ -149,7 +149,8 @@ h1 {
 }
 /* END of header */
 main {
-  height: 100vh;
+  
+  _height: 100vh;
 }
 /* Footer styling */
 .Footer-wrapper {
