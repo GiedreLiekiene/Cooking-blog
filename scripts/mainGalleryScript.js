@@ -35,36 +35,3 @@ async function getPhotos() {
   } catch (error) {}
 }
 getPhotos();
-<<<<<<< HEAD:script.js
-
-//search-bar
-let search = document.querySelector(".search");
-console.log(search)
-let clear = document.querySelector(".clear");
-let input = document.getElementById("search");
-
-search.onclick = function () {
-  document.querySelector(".search-container").classList.toggle("active");
-  getBack(input.innerHTML.length)
-};
-
-clear.onclick = function () {
-  document.getElementById("search").value = "";
-};
-
-clear.ondblclick = function () {
-  document.querySelector(".search-container").classList.toggle("active", false);
-};
-
-function inactive (ms) {
-    return setTimeout(() => {}, ms);
-};
-
-function getBack(input) {
-    inactive(3000);
-    return (input === 0) =  document.querySelector(".search-container").classList.toggle('active', false);
-}
-
-    
-=======
->>>>>>> main:scripts/mainGalleryScript.js

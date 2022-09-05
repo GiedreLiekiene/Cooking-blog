@@ -4,12 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/categorieslist.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/mainGallery.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Yummy cooking</title>
   </head>
   <body>
@@ -35,14 +43,14 @@
                 <i class="clear fa fa-times"></i>
               </div>
             </div>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+            <div class="input">
+              <input type="text" placeholder="Search..." id="search" />
+              <i class="clear fa fa-times"></i>
             </div>
-          </nav>
-        </div>
-      </header>
+          </div>
+        </nav>
+      </div>
+    </header>
     <div>
     <!-- OLGA: Content Gallery -->
     <section class="main-gallery" id="main-gallery">
@@ -50,32 +58,55 @@
     </section>
 
     <!-- GIEDRE: Categories-list -->
-    <div class="categories-list"></div>
+    <div class="categories-list-container">
+      <div class="categories-list"></div>
+    </div>
+    <script src="./scripts/categorieslist.js"></script>
 
-    <script src="./categorieslist.js"></script>
-    <script src="./script.js"></script>
+    <!-- Search scripts -->
+    <script src="./scripts/script.js"></script>
   </main>
 
     <!-- KIA: Footer -->
-    <div class="global">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-md-3">
-              <div class="social">
-                <h6>Follow us</h6>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-              </div>
-            </div>
-          </div>
+    <div class="footer">
+      <div class="social">
+        <h6>Contact us</h6>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/kjkiqtxg.json"
+              trigger="hover"
+              colors="outline:#5c0e0a,primary:#fae6d1,secondary:#ee6d66,tertiary:#ffffff"
+              style="width:70px;height:70px">
+          </lord-icon>
+          <lord-icon class="animated"
+              src="https://cdn.lordicon.com/gzmgulpl.json"
+              trigger="hover"
+              colors="outline:#121331,primary:#ee6d66,secondary:#e3c0ac"
+              style="width:70px; height:70px">
+          </lord-icon>
+          <lord-icon
+              src="https://cdn.lordicon.com/bjnaomnr.json"
+              trigger="hover"
+              colors="outline:#5c0e0a,primary:#fae6d1,secondary:#ee6d66,tertiary:#ffffff"
+              style="width:70px;height:70px">
+          </lord-icon>
+          <lord-icon
+              src="https://cdn.lordicon.com/ttioogfl.json"
+              trigger="morph"
+              colors="primary:#5c0e0a,secondary:#ffffff,tertiary:#fae6d1,quaternary:#92140c,quinary:#ee6d66"
+              style="width:60px;height:60px">
+          </lord-icon>
       </div>
-     </div>
-    <script src="./scripts/categorieslist.js"></script>
-    <script src="./scripts/script.js"></script>
+      <div class="social">
+        <h6>Follow us</h6>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+      </div>  
+  </div>
+  
   </body>
 </html>
