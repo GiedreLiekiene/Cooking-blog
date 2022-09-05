@@ -35,7 +35,6 @@ async function getPhotos() {
   } catch (error) {}
 }
 getPhotos();
-<<<<<<< HEAD:script.js
 
 //search-bar
 let search = document.querySelector(".search");
@@ -64,7 +63,3 @@ function getBack(input) {
     inactive(3000);
     return (input === 0) =  document.querySelector(".search-container").classList.toggle('active', false);
 }
-
-    
-=======
->>>>>>> main:scripts/mainGalleryScript.js
