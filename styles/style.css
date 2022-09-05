@@ -299,7 +299,7 @@ h1 {
   .nav-menu.active {
     left: 0;
   }
-  h3, p {
+  .h3-recipe, .p-recipe {
     padding: 10px;
     margin: auto;
   }
