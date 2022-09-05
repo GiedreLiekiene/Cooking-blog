@@ -1,6 +1,6 @@
 .footer{
     color: rgba(129, 2, 36, 0.9);
-    height: 80px;
+    height: fit-content;
     opacity: 0.6;
     padding: 50px;
     position: relative;
@@ -21,7 +21,7 @@
 }
 
 .footer .social{
-    border-top: 1px solid rgba(129, 2, 36, 0.7);
+    
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
@@ -54,6 +54,30 @@
     height: 40px;
     opacity: 0.9;
     width: 40px;
+}
+.copyright{
+    color: rgba(129, 2, 36, 0.9);
+    height: fit-content;
+    opacity: 0.6;
+    padding: none;
+    position: relative;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.copyright .social h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.copyright .social h4{
+    font-weight: 100; 
+    text-transform: none;
 }
 
 @media (max-width: 480px){
