@@ -1,14 +1,20 @@
+figure {
+  width: 100%;
+  padding-left: 1em;
+  align-items: center;
+}
 .main-gallery {
     box-sizing: border-box;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    justify-content: space-around;
-  }
+  } 
   .main-gallery img {
     width: 20%;
     border-radius: 10px;
+    position: center;
     margin: 2em;
+    margin-right: 2em;
     cursor: pointer;
   }
   .main-gallery img:hover {
