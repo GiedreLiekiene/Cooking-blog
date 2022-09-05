@@ -2,7 +2,7 @@ const mainGallery = document.getElementById("main-gallery");
 
 let photoArray = [];
 const count = 4;
-const apiKey = `OEH6_80RXE-j8St-xA81dCjB7a20T-Zj2uBu06_GOhs`;
+const apiKey = `DIbTwhDyT9VigsWbL8jWk_O5ik7Ee6YkESzLrCXSEb8`;
 let query = "food";
 let orientation = "portrait";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=${orientation}&query=${query}`;
